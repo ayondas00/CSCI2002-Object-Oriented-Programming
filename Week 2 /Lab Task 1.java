@@ -1,41 +1,39 @@
-package javacode;
+public class Book {
 
-public class Student {
-
-    String name;
-    int id;
-    double cgpa;
-    String dep;
+    String title;
+    String author;
+    double price;
+    String category;
 
     // Constructor
-    Student(String name, int id, double cgpa, String dep) {
-        this.name = name;
-        this.id = id;
-        this.cgpa = cgpa;
-        this.dep = dep;
+    Book(String title, String author, double price, String category) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+        this.category = category;
     }
 
-    void study() {
-        System.out.println("Student is studying");
+    void read() {
+        System.out.println("Reading the book");
     }
 
     void display() {
-        System.out.println(name + " " + id + " " + cgpa);
+        System.out.println(title + " " + author + " " + price);
     }
 
     public String toString() {
-        return "Name: " + name + ", ID: " + id + ", Dep: " + dep;
+        return "Title: " + title + ", Author: " + author + ", Category: " + category;
     }
 
     public static void main(String[] args) {
         // **TODO** Auto-generated method stub
 
-        Student s1 = new Student("Karim", 101, 3.00, "CSE");
+        Book b1 = new Book("Java Programming", "James Gosling", 750.0, "Programming");
 
-        s1.study();
-        s1.display();
+        b1.read();
+        b1.display();
 
-        System.out.println(s1);
+        System.out.println(b1);
     }
 
 }
