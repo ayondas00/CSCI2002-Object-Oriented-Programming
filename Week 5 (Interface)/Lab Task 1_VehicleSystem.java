@@ -1,4 +1,3 @@
-
 package JavaProject;
 
 interface Vehicle {
